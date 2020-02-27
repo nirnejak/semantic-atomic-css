@@ -5,51 +5,51 @@ $spaceamounts: (0, 0.5, 1, 1.5, 2);
 
   // 	Padding
   .has-padding-#{$i} {
-    padding: #{$space}em !important;
+    padding: #{$space}em;
   }
   .has-padding-top-#{$i} {
-    padding-top: #{$space}em !important;
+    padding-top: #{$space}em;
   }
   .has-padding-bottom-#{$i} {
-    padding-left: #{$space}em !important;
+    padding-left: #{$space}em;
   }
   .has-padding-left-#{$i} {
-    padding-left: #{$space}em !important;
+    padding-left: #{$space}em;
   }
   .has-padding-right-#{$i} {
-    padding-right: #{$space}em !important;
+    padding-right: #{$space}em;
   }
   .has-padding-vertical-#{$i} {
-    padding-top: #{$space}em !important;
-    padding-bottom: #{$space}em !important;
+    padding-top: #{$space}em;
+    padding-bottom: #{$space}em;
   }
   .has-padding-horizontal-#{$i} {
-    padding-left: #{$space}em !important;
-    padding-right: #{$space}em !important;
+    padding-left: #{$space}em;
+    padding-right: #{$space}em;
   }
 
   // 	Margin
   .has-margin-#{$i} {
-    margin: #{$space}em !important;
+    margin: #{$space}em;
   }
   .has-margin-top-#{$i} {
-    margin-top: #{$space}em !important;
+    margin-top: #{$space}em;
   }
   .has-margin-bottom-#{$i} {
-    margin-left: #{$space}em !important;
+    margin-left: #{$space}em;
   }
   .has-margin-left-#{$i} {
-    margin-left: #{$space}em !important;
+    margin-left: #{$space}em;
   }
   .has-margin-right-#{$i} {
-    margin-right: #{$space}em !important;
+    margin-right: #{$space}em;
   }
   .has-margin-vertical-#{$i} {
-    margin-top: #{$space}em !important;
-    margin-bottom: #{$space}em !important;
+    margin-top: #{$space}em;
+    margin-bottom: #{$space}em;
   }
   .has-margin-horizontal-#{$i} {
-    margin-left: #{$space}em !important;
-    margin-right: #{$space}em !important;
+    margin-left: #{$space}em;
+    margin-right: #{$space}em;
   }
 }

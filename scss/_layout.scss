@@ -1,0 +1,39 @@
+$positions: ("static", "fixed", "relative", "absolute", "sticky");
+@each $position in $positions {
+  .has-position-#{$position} {
+    position: #{$position};
+  }
+}
+
+.is-borderless {
+  border: none;
+}
+
+.has-background-transparent {
+  background: transparent;
+}
+
+.has-background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.has-background-contain {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+$overflowProperties: ("hidden", "scroll", "none");
+@each $overflowProperty in $overflowProperties {
+  .has-overflow-#{$overflowProperty} {
+    overflow: #{$overflowProperty};
+  }
+  .has-overflow-x-#{$overflowProperty} {
+    overflow-x: #{$overflowProperty};
+  }
+  .has-overflow-y-#{$overflowProperty} {
+    overflow-y: #{$overflowProperty};
+  }
+}

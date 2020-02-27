@@ -1,0 +1,12 @@
+.has-text-overflow-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+$cursors: ("default", "pointer", "not-allowed", "context-menu");
+@each $cursor in $cursors {
+  .has-cursor-#{$cursor} {
+    cursor: #{$cursor};
+  }
+}
