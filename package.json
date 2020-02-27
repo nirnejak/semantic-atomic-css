@@ -4,7 +4,8 @@
   "description": "Atomic css classes for bulma",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "scss --watch scss/main.scss:css/style.css",
+    "build": "scss scss/main.scss:css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/nirnejak/bulma-atomic/issues"
   },
-  "homepage": "https://github.com/nirnejak/bulma-atomic#readme"
+  "homepage": "https://github.com/nirnejak/bulma-atomic#readme",
+  "devDependencies": {
+    "sass": "^1.26.1"
+  }
 }

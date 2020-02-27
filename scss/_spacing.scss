@@ -1,0 +1,55 @@
+$spaceamounts: (0, 0.5, 1, 1.5, 2);
+
+@each $space in $spaceamounts {
+  $i: index($spaceamounts, $space);
+
+  // 	Padding
+  .has-padding-#{$i} {
+    padding: #{$space}em !important;
+  }
+  .has-padding-top-#{$i} {
+    padding-top: #{$space}em !important;
+  }
+  .has-padding-bottom-#{$i} {
+    padding-left: #{$space}em !important;
+  }
+  .has-padding-left-#{$i} {
+    padding-left: #{$space}em !important;
+  }
+  .has-padding-right-#{$i} {
+    padding-right: #{$space}em !important;
+  }
+  .has-padding-vertical-#{$i} {
+    padding-top: #{$space}em !important;
+    padding-bottom: #{$space}em !important;
+  }
+  .has-padding-horizontal-#{$i} {
+    padding-left: #{$space}em !important;
+    padding-right: #{$space}em !important;
+  }
+
+  // 	Margin
+  .has-margin-#{$i} {
+    margin: #{$space}em !important;
+  }
+  .has-margin-top-#{$i} {
+    margin-top: #{$space}em !important;
+  }
+  .has-margin-bottom-#{$i} {
+    margin-left: #{$space}em !important;
+  }
+  .has-margin-left-#{$i} {
+    margin-left: #{$space}em !important;
+  }
+  .has-margin-right-#{$i} {
+    margin-right: #{$space}em !important;
+  }
+  .has-margin-vertical-#{$i} {
+    margin-top: #{$space}em !important;
+    margin-bottom: #{$space}em !important;
+  }
+  .has-margin-horizontal-#{$i} {
+    margin-left: #{$space}em !important;
+    margin-right: #{$space}em !important;
+  }
+}
