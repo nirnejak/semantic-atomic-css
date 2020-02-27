@@ -1,0 +1,26 @@
+{
+  "name": "bulma-atomic",
+  "version": "1.0.0",
+  "description": "Atomic css classes for bulma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirnejak/bulma-atomic.git"
+  },
+  "keywords": [
+    "Bulma",
+    "Atomic",
+    "CSS",
+    "Helper",
+    "Classes"
+  ],
+  "author": "Jitendra Nirnejak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirnejak/bulma-atomic/issues"
+  },
+  "homepage": "https://github.com/nirnejak/bulma-atomic#readme"
+}
