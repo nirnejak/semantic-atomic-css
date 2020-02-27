@@ -5,51 +5,101 @@ $spaceamounts: (0, 0.5, 1, 1.5, 2);
 
   // 	Padding
   .has-padding-#{$i} {
-    padding: #{$space}em;
+    padding: #{$space}rem;
   }
   .has-padding-top-#{$i} {
-    padding-top: #{$space}em;
+    padding-top: #{$space}rem;
   }
   .has-padding-bottom-#{$i} {
-    padding-left: #{$space}em;
+    padding-left: #{$space}rem;
   }
   .has-padding-left-#{$i} {
-    padding-left: #{$space}em;
+    padding-left: #{$space}rem;
   }
   .has-padding-right-#{$i} {
-    padding-right: #{$space}em;
+    padding-right: #{$space}rem;
   }
   .has-padding-vertical-#{$i} {
-    padding-top: #{$space}em;
-    padding-bottom: #{$space}em;
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
   }
   .has-padding-horizontal-#{$i} {
-    padding-left: #{$space}em;
-    padding-right: #{$space}em;
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
   }
 
   // 	Margin
   .has-margin-#{$i} {
-    margin: #{$space}em;
+    margin: #{$space}rem;
   }
   .has-margin-top-#{$i} {
-    margin-top: #{$space}em;
+    margin-top: #{$space}rem;
   }
   .has-margin-bottom-#{$i} {
-    margin-left: #{$space}em;
+    margin-left: #{$space}rem;
   }
   .has-margin-left-#{$i} {
-    margin-left: #{$space}em;
+    margin-left: #{$space}rem;
   }
   .has-margin-right-#{$i} {
-    margin-right: #{$space}em;
+    margin-right: #{$space}rem;
   }
   .has-margin-vertical-#{$i} {
-    margin-top: #{$space}em;
-    margin-bottom: #{$space}em;
+    margin-top: #{$space}rem;
+    margin-bottom: #{$space}rem;
   }
   .has-margin-horizontal-#{$i} {
-    margin-left: #{$space}em;
-    margin-right: #{$space}em;
+    margin-left: #{$space}rem;
+    margin-right: #{$space}rem;
   }
+}
+
+// 	Padding
+.has-padding-auto {
+  padding: auto;
+}
+.has-padding-top-auto {
+  padding-top: auto;
+}
+.has-padding-bottom-auto {
+  padding-left: auto;
+}
+.has-padding-left-auto {
+  padding-left: auto;
+}
+.has-padding-right-auto {
+  padding-right: auto;
+}
+.has-padding-vertical-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.has-padding-horizontal-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+// 	Margin
+.has-margin-auto {
+  margin: auto;
+}
+.has-margin-top-auto {
+  margin-top: auto;
+}
+.has-margin-bottom-auto {
+  margin-left: auto;
+}
+.has-margin-left-auto {
+  margin-left: auto;
+}
+.has-margin-right-auto {
+  margin-right: auto;
+}
+.has-margin-vertical-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.has-margin-horizontal-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
