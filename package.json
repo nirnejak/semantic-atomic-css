@@ -4,8 +4,8 @@
   "description": "Atomic css classes for bulma",
   "main": "index.js",
   "scripts": {
-    "start": "scss --watch scss/main.scss:css/style.css",
-    "build": "scss scss/main.scss:css/style.css --style compressed"
+    "start": "scss --watch scss/main.scss:build/css/style.css",
+    "build": "scss scss/main.scss:build/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",

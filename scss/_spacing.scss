@@ -1,105 +1,70 @@
-$spaceamounts: (0, 0.5, 1, 1.5, 2);
-
-@each $space in $spaceamounts {
-  $i: index($spaceamounts, $space);
-
-  // 	Padding
-  .has-padding-#{$i} {
-    padding: #{$space}rem;
-  }
-  .has-padding-top-#{$i} {
-    padding-top: #{$space}rem;
-  }
-  .has-padding-bottom-#{$i} {
-    padding-left: #{$space}rem;
-  }
-  .has-padding-left-#{$i} {
-    padding-left: #{$space}rem;
-  }
-  .has-padding-right-#{$i} {
-    padding-right: #{$space}rem;
-  }
-  .has-padding-vertical-#{$i} {
-    padding-top: #{$space}rem;
-    padding-bottom: #{$space}rem;
-  }
-  .has-padding-horizontal-#{$i} {
-    padding-left: #{$space}rem;
-    padding-right: #{$space}rem;
-  }
-
-  // 	Margin
-  .has-margin-#{$i} {
-    margin: #{$space}rem;
-  }
-  .has-margin-top-#{$i} {
-    margin-top: #{$space}rem;
-  }
-  .has-margin-bottom-#{$i} {
-    margin-left: #{$space}rem;
-  }
-  .has-margin-left-#{$i} {
-    margin-left: #{$space}rem;
-  }
-  .has-margin-right-#{$i} {
-    margin-right: #{$space}rem;
-  }
-  .has-margin-vertical-#{$i} {
-    margin-top: #{$space}rem;
-    margin-bottom: #{$space}rem;
-  }
-  .has-margin-horizontal-#{$i} {
-    margin-left: #{$space}rem;
-    margin-right: #{$space}rem;
-  }
+.is-paddingless {
+  padding: 0;
 }
 
-// 	Padding
-.has-padding-auto {
-  padding: auto;
-}
-.has-padding-top-auto {
-  padding-top: auto;
-}
-.has-padding-bottom-auto {
-  padding-left: auto;
-}
-.has-padding-left-auto {
-  padding-left: auto;
-}
-.has-padding-right-auto {
-  padding-right: auto;
-}
-.has-padding-vertical-auto {
-  padding-top: auto;
-  padding-bottom: auto;
-}
-.has-padding-horizontal-auto {
-  padding-left: auto;
-  padding-right: auto;
+.is-marginless {
+  padding: 0;
 }
 
-// 	Margin
-.has-margin-auto {
-  margin: auto;
-}
-.has-margin-top-auto {
-  margin-top: auto;
-}
-.has-margin-bottom-auto {
-  margin-left: auto;
-}
-.has-margin-left-auto {
-  margin-left: auto;
-}
-.has-margin-right-auto {
-  margin-right: auto;
-}
-.has-margin-vertical-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.has-margin-horizontal-auto {
-  margin-left: auto;
-  margin-right: auto;
+$properties: ("margin", "padding");
+$directions: ("top", "bottom", "left", "right");
+$spaceamounts: (0, 0.5, 1, 1.5, 2, 2.5, 3);
+
+@each $property in $properties {
+  .has-#{$property}-auto {
+    #{$property}: auto;
+  }
+  .has-#{$property}-vertical-auto {
+    #{$property}-top: auto;
+    #{$property}-bottom: auto;
+  }
+  .has-#{$property}-horizontal-auto {
+    #{$property}-left: auto;
+    #{$property}-right: auto;
+  }
+
+  @each $direction in $directions {
+    .has-#{$property}-#{$direction}-auto {
+      #{$property}-#{$direction}: auto;
+    }
+  }
+
+  @each $space in $spaceamounts {
+    $i: index($spaceamounts, $space)-1;
+
+    @if ($i == 0) {
+      .has-#{$property}-none {
+        #{$property}: #{$space};
+      }
+      @each $direction in $directions {
+        .has-#{$property}-#{$direction}-none {
+          #{$property}: #{$space};
+        }
+      }
+    } @else {
+      .has-#{$property}-#{$i} {
+        #{$property}: #{$space}rem;
+      }
+      .has-#{$property}-top-#{$i} {
+        #{$property}-top: #{$space}rem;
+      }
+      .has-#{$property}-bottom-#{$i} {
+        #{$property}-left: #{$space}rem;
+      }
+      .has-#{$property}-left-#{$i} {
+        #{$property}-left: #{$space}rem;
+      }
+      .has-#{$property}-right-#{$i} {
+        #{$property}-right: #{$space}rem;
+      }
+      .has-#{$property}-vertical-#{$i} {
+        #{$property}-top: #{$space}rem;
+        #{$property}-bottom: #{$space}rem;
+      }
+      .has-#{$property}-horizontal-#{$i} {
+        #{$property}-left: #{$space}rem;
+        #{$property}-right: #{$space}rem;
+      }
+    }
+  }
 }
