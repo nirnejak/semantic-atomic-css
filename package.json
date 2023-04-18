@@ -1,7 +1,7 @@
 {
   "name": "semantic-atomic-css",
   "version": "1.0.0",
-  "description": "Semantic Atomic css classes",
+  "description": "Semantic and atomic CSS classes",
   "main": "index.js",
   "scripts": {
     "start": "scss --watch scss/main.scss:build/css/style.css",

@@ -1,4 +1,3 @@
-# Bulma Atomic
+# Semantic Atomic CSS
 
-Atomic Helper classes for Bulma CSS
-
+Semantic and atomic CSS classes
