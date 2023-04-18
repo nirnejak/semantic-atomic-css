@@ -1,7 +1,7 @@
 {
-  "name": "bulma-atomic",
+  "name": "semantic-atomic-css",
   "version": "1.0.0",
-  "description": "Atomic css classes for bulma",
+  "description": "Semantic Atomic css classes",
   "main": "index.js",
   "scripts": {
     "start": "scss --watch scss/main.scss:build/css/style.css",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nirnejak/bulma-atomic.git"
+    "url": "git+https://github.com/nirnejak/semantic-atomic-css.git"
   },
   "keywords": [
     "Bulma",
@@ -21,9 +21,9 @@
   "author": "Jitendra Nirnejak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nirnejak/bulma-atomic/issues"
+    "url": "https://github.com/nirnejak/semantic-atomic-css/issues"
   },
-  "homepage": "https://github.com/nirnejak/bulma-atomic#readme",
+  "homepage": "https://github.com/nirnejak/semantic-atomic-css#readme",
   "devDependencies": {
     "sass": "^1.26.1"
   }
